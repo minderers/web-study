@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐列表</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script src="./js/jquery.min.js"></script>
+    <style>
+        body {background-image: url("./images/bg2.jpg");
+            background-color: #FFB7DD;
+        }
+        .song-box{
+            background-color: #F08080;
+            width: 800px;
+            height: 400px;
+            cursor:pointer;
+            display: flex;
+            border-radius: 8px;
+            margin: 10px auto ;
+        }
+        .fr{
+            padding: 5px 100px;
+            text-align: center;
+        }
+
+        audio{
+            margin-top: 10px;
+            width: 220px;
+            height: 38px;
+            opacity: .5;
+        }
+        .w {
+            text-align: center;
+            margin-top: 200px;
+            text-align: center;
+        }
+        button {
+            background-color:#F08080;
+            border-radius: 12px;
+            border-style: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        button:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body onload="load()" class="bg-white">
+<div class="w">
+    <div class="song-box">
+        <div class="fr">
+            <img src="" alt="" id="cover" style="border-radius: 50%;width: 200px">
+            <h3 id="singer" style="text-align: center"></h3>
+            <p id="name"style="text-align: center"></p>
+            <p class="ellipsis" id="lyric">
+            </p>
+            <audio src="" controls id="path" style="text-align: center"></audio>
+        </div>
+    </div>
+    <button id="prev-btn">前一首</button>
+    <button id="next-btn">后一首</button>
+    <button id="random-btn">随机</button>
+</div>
+
+
+<script src="./js/music.js"></script>
+</body>
+</html>
